@@ -1,0 +1,184 @@
+HKBK COLLEGE OF ENGINEERING
+DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
+RESEARCH PAPER SUBMISSION WITH STEPS MAPPED TO RESEARCHPROCESS
+Course
+Research Methodology and IPR
+Subject Code
+BRMK557
+Academic Year
+2026 – 2027
+Faculty Guide
+Prof. Husna Tabassum
+ASSOCIATED MINI PROJECT TOPIC
+WasteWay: An AI-Powered Digital Waste Passport and Circularity Guidance System
+TEAM MEMBERS
+Sl. No.
+Name
+USN
+1
+Chandana Gowda N
+1HK24CS055
+2
+Athmeeya B S
+1HK24CS036
+3
+Amrutha K
+1HK24CS021
+1. INTRODUCTION
+Waste management is not only a collection and disposal problem; it is also an information and decision-making problem. A person may recognize an item as waste but may still be unsure whether it can be reused, repaired, recycled, returned to a collection point, or sent through another suitable channel.
+WasteWay is proposed as a software-based system that connects these decisions in one workflow. The user uploads an image of a waste item, an AI/ML image-classification component identifies its likely category, and the system provides a suitable circularity action. For recyclable material, the system can also point the user towards an appropriate recycling area, collection centre, or scrap shop when such destination information is available.
+The project is inspired by the Digital Product Passport concept discussed in the selected IEEE base paper. The paper presents a reference architecture in which structured product information supports traceability, interoperability, artificial-intelligence-based functions and circular-economy activities across the product lifecycle [1].
+WasteWay adapts this idea to a consumer-oriented waste context. Instead of maintaining the complete industrial lifecycle of equipment, the proposed Digital Waste Passport records the identified waste category, recommended action, suggested destination and the user's confirmed outcome. The project therefore combines image classification, circularity guidance and a digital record into a single application.
+2. RESEARCH PROCESS STEP 1: DEFINING THE RESEARCH PROBLEM
+The base paper identifies the need to integrate artificial intelligence, Digital Product Passports, interoperability and circular-economy practices within industrial equipment lifecycle management [1]. This provides the starting point for defining the problem addressed by WasteWay.
+• Waste is often identified without giving the user an immediate, material-specific action.
+• Visual identification alone does not tell the user whether an item should be reused, repaired, recycled or taken to a particular collection channel.
+• Information about the identified item is rarely retained as a simple digital record that can support later tracking or confirmation.
+• For recyclable materials, the user may still need to search separately for a suitable collection centre or scrap shop.
+Research problem statement: How can an AI-enabled software system identify household waste from an image and use that identification to generate a Digital Waste Passport with circularity guidance and a suitable collection or recycling destination?
+Reference-paper mapping: The problem definition follows the base paper's emphasis on using structured digital information and AI to support decisions across a lifecycle. WasteWay narrows that idea to the point at which a household item becomes waste and requires an actionable next step [1].
+3. RESEARCH PROCESS STEP 2: CONDUCTING THE LITERATURE REVIEW
+The literature review is organized around Digital Product Passports, circular economy, artificial intelligence and waste-related decision support. The selected IEEE base paper is the primary reference because it directly combines AI, Digital Product Passports and lifecycle-oriented circularity [1].
+• Digital Product Passport: A structured set of product information can improve traceability, transparency and the availability of information across lifecycle stages [1], [2].
+• Circular economy: Digital information can support repair, reuse, recycling and better resource decisions rather than treating disposal as the only endpoint [2], [3].
+• Artificial intelligence: AI can process large amounts of data and support prediction, classification and decision-making within digital systems [1].
+• Waste decision support: AI-based approaches can support reduce, reuse, recycle and recover decisions when the system links recognition with an appropriate action [4].
+• Reference architectures: Layered and modular architectures help separate data acquisition, processing, application functions and decision support [1], [5].
+The literature review therefore supports the main design direction of WasteWay: identification should not be treated as the final output. The identified item should become structured information that can be used for a practical circularity decision.
+4. RESEARCH PROCESS STEP 3: FORMULATION OF RESEARCH HYPOTHESIS AND OBJECTIVES
+The base paper develops a reference architecture rather than a household waste classifier. WasteWay formulates its research objective by transferring the useful architectural idea of structured information and AI-supported decision-making into a smaller consumer-facing workflow [1].
+Research hypothesis
+• H1: Integrating AI-based waste image classification with circularity guidance and a Digital Waste Passport can provide more actionable waste-management information than image classification alone.
+Research objectives
+1. Develop an AI/ML-based image-classification component for identifying selected household waste categories.
+2. Create a Digital Waste Passport containing the identified category, recommended action and destination-related information.
+3. Provide context-aware guidance for reuse, repair, recycling or appropriate collection.
+4. Recommend a suitable recycling area, collection centre or scrap shop for recyclable materials when verified destination information is available.
+5. Connect image input, classification, guidance, destination recommendation and digital record creation in one workflow.
+6. Evaluate the prototype using appropriate classification and guidance-related measures without assuming results before testing.
+5. RESEARCH PROCESS STEP 4: RESEARCH DESIGN AND METHODOLOGY
+WasteWay follows an applied experimental software-research design. The study moves from a labelled image dataset to AI/ML classification and then to a rule- or knowledge-based circularity recommendation layer. The methodology is kept modular so that individual components can be evaluated separately.
+Methodology stages
+1. Define the waste categories and the expected circular actions for each category.
+2. Collect and organize labelled images representing the selected categories.
+3. Preprocess the images and prepare the dataset for model development.
+4. Train or configure an image-classification model and evaluate its predictions on unseen images.
+5. Map the predicted category to reuse, repair, recycling or collection guidance.
+6. Identify an appropriate destination where local collection information is available.
+7. Create and store the Digital Waste Passport record.
+8. Evaluate the complete workflow and interpret both technical and practical observations.
+Reference-paper mapping: The methodology follows the base paper's modular view of data acquisition, processing and application functions. Its Edge, Platform and Enterprise layers are not reproduced as a full industrial architecture; instead, their separation of acquisition, processing and user-facing functions is adapted to the smaller WasteWay application [1].
+5.1 Proposed WasteWay Architecture
+Layer
+Main function
+WasteWay implementation
+Input / Acquisition
+Capture the item and basic user input
+Upload waste image; optional user confirmation
+AI / Processing
+Identify and interpret the item
+Image preprocessing, feature learning and waste-category prediction
+Application / Guidance
+Turn identification into action
+Circularity recommendation, destination guidance and Digital Waste Passport
+6. RESEARCH PROCESS STEP 5: DATA COLLECTION
+Data collection focuses on labelled images of the waste categories supported by the prototype. The dataset must represent the visual variation that the model is expected to encounter rather than relying on a small set of nearly identical images.
+• Image source: labelled waste images collected or prepared for the selected categories.
+• Ground truth: the correct waste category assigned to each image.
+• Variation: different backgrounds, lighting conditions, object orientations and appearances should be represented where possible.
+• Dataset organization: images should be separated into training, validation and testing sets.
+• Quality control: incorrect labels, duplicate images and unusable samples should be identified before model training.
+The base paper similarly emphasizes the transformation of collected data into structured information that can support lifecycle decisions. In WasteWay, the same research logic is applied to image data and waste-category information [1].
+Important limitation: actual dataset size, category count and model performance should be reported only after the project team has completed data collection and testing. No numerical project result is assumed in this report.
+7. RESEARCH PROCESS STEP 6: DATA ANALYSIS
+Data analysis is carried out at two levels. The first level evaluates whether the AI/ML component correctly identifies the waste category. The second level evaluates whether the identified category is translated into useful circularity guidance.
+• Classification accuracy: proportion of test images assigned to the correct category.
+• Precision: proportion of predictions for a category that are correct.
+• Recall: proportion of actual items in a category that are correctly identified.
+• F1-score: combined measure of precision and recall.
+• Confusion matrix: identifies categories that are frequently confused with one another.
+• Guidance correctness: checks whether the predicted category is linked to an appropriate circular action.
+• Destination availability: checks whether a verified recycling or collection destination is available for the recommended material.
+• Passport completeness: checks whether the digital record contains the required fields.
+These measures allow the project to distinguish between a technically correct classifier and a useful end-to-end waste guidance system. A strong classification result is not sufficient if the subsequent action mapping is incomplete or inappropriate.
+8. RESEARCH PROCESS STEP 7: INTERPRETATION OF RESULTS
+Interpretation should consider the complete WasteWay workflow rather than treating image classification as the final result.
+• If visually distinct waste categories are classified consistently, the image-classification stage can be considered suitable for the tested categories.
+• If visually similar categories are confused, the likely causes should be examined through the dataset, preprocessing and model design rather than through accuracy alone.
+• If classification is correct but the recommended action is unsuitable, the issue lies in the circularity mapping or knowledge base rather than necessarily in the classifier.
+• If a suitable action is produced but no destination is available, the limitation may be the coverage or verification of local collection information.
+• If users confirm or reject the suggested action, those outcomes can be used as useful feedback for later system improvement.
+The interpretation is consistent with the base paper's broader principle that AI becomes useful when it is integrated into an architecture that turns data into information and decisions. WasteWay applies this principle to a smaller waste-management workflow [1].
+Because the prototype's actual test results are not supplied here, this report does not claim an accuracy value or a particular model as the final winner. The final submission can insert the measured results after experimental evaluation.
+9. RESEARCH PROCESS STEP 8: REPORT WRITING AND RESEARCH PROCESS MAPPING
+The final research report records the problem, literature foundation, research gap, objectives, methodology, data collection, analysis and interpretation in the same sequence used to conduct the study. This makes the project traceable from the original research question to the proposed system.
+9.1 Base Paper to WasteWay Mapping
+Research stage
+Base paper [1]
+WasteWay application
+Problem
+Need for integrated AI, DPP and lifecycle management
+Need to connect waste identification with actionable guidance
+Literature
+DPP, AI, interoperability and circular economy
+DPP, AI, circular economy and waste decision support
+Gap
+Industrial reference architecture leaves sector-specific adaptation needs
+Consumer-oriented waste workflow with image-to-action-to-destination support
+Objective
+Develop a reference architecture for AI-enabled industrial lifecycle management
+Develop an AI-enabled Digital Waste Passport and guidance workflow
+Methodology
+Layered and modular architectural approach
+Input, AI/processing and guidance layers
+Data
+Lifecycle and operational information
+Labelled waste images and waste-category information
+Analysis
+Architectural, functional and implementation viewpoints
+Classification and guidance evaluation
+Outcome
+Structured architecture supporting lifecycle decisions
+Actionable waste guidance plus a digital waste record
+9.2 Research Process Flowchart
+Research Problem
+→
+Literature Review
+→
+Research Gap
+Hypothesis & Objectives
+→
+Research Design
+→
+Data Collection
+AI/ML Classification
+→
+Circularity Guidance
+→
+Destination Recommendation
+Digital Waste Passport
+→
+Data Analysis
+→
+Interpretation
+Report Writing
+→
+Conclusion
+→
+Future Scope
+10. CONCLUSION AND FUTURE SCOPE
+WasteWay proposes an AI-powered software workflow that begins with an image of a waste item and ends with a practical circularity decision and a digital record. The proposed system combines four connected functions: waste identification, circularity guidance, destination recommendation and Digital Waste Passport creation.
+The project is grounded in the selected IEEE base paper, which demonstrates how Digital Product Passports, artificial intelligence, structured data and circular-economy principles can be organized within a modular architecture [1]. WasteWay does not attempt to reproduce the full industrial AIDEAS architecture; it adapts the underlying research idea to a household waste-management scenario.
+• Expand the number and diversity of waste categories.
+• Increase dataset size and improve image quality and class balance.
+• Compare additional deep-learning models and preprocessing strategies.
+• Integrate verified and regularly updated local collection-centre and scrap-shop information.
+• Extend the passport to include user-confirmed outcomes and later reuse, repair or recycling events.
+• Support special waste streams such as electronic and hazardous household waste with appropriate handling guidance.
+• Explore interoperability with larger Digital Product Passport or municipal waste-information systems.
+REFERENCES
+[1] M. A. Mateo-Casali, L. Moya-Ruiz, A. Boza, and F. Fraile, “Reference Architecture for Digital Product Passports: Leveraging AI in Industry 4.0 Systems,” 2025 IEEE International Conference on Engineering, Technology and Innovation (ICE/ITMC), 2025, doi: 10.1109/ICE/ITMC65658.2025.11106524.
+[2] F. Psarommatis and G. May, “Digital Product Passport: A Pathway to Circularity and Sustainability in Modern Manufacturing,” Sustainability, vol. 16, no. 1, 2024, doi: 10.3390/su16010396.
+[3] T. Adisorn, L. Tholen, and T. Götz, “Towards a digital product passport fit for contributing to a circular economy,” Energies, vol. 14, no. 8, 2021, doi: 10.3390/en14082289.
+[4] K. H. Yu, Y. Zhang, D. Li, C. E. Montenegro-Marin, and P. M. Kumar, “Environmental planning based on reduce, reuse, recycle and recover using artificial intelligence,” Environmental Impact Assessment Review, vol. 86, 2021.
+[5] J. Kaiser, D. McFarlane, G. Hawkridge, P. André, and P. Leitão, “A review of reference architectures for digital manufacturing: Classification, applicability and open issues,” Computers in Industry, 2023, doi: 10.1016/j.compind.2023.103923.

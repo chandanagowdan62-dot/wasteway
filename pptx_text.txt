@@ -1,0 +1,136 @@
+--- ppt/slides/slide1.xml ---
+AI-Based Smart Waste
+Segregation System
+Using Image Classification
+ZEROTH REVIEW PRESENTATION
+Department of Computer Science and Engineering
+HKBK College of Engineering
+Team Members
+Chandana Gowda N  •  1HK24CS055
+Athmruta K  •  1HK24CS021
+Athmeeya B S  •  1HK24CS036
+--- ppt/slides/slide2.xml ---
+Problem Statement
+From confusion at home to informed waste decisions
+The Everyday Confusion
+A household waste item may look simple, but its material, condition and contamination can change how it should be handled.
+The Hidden Consequence
+Incorrect segregation can mix recoverable materials with unsuitable waste and make safe processing more difficult.
+The AI Opportunity
+An image-based intelligent assistant can help users recognise waste and understand the next suitable action.
+“The problem is not only where waste goes — it is that people often do not know what the waste actually needs.”
+Our project aims to convert a simple waste image into a clear, practical and responsible action.
+02
+--- ppt/slides/slide3.xml ---
+Abstract
+An AI-assisted approach to household waste understanding
+Project Concept
+The proposed system uses Artificial Intelligence and Machine Learning to classify household waste from an input image. After prediction, the system provides meaningful guidance related to reuse, recycling, collection or special handling.
+Proposed Intelligence Layer
+The system is designed to move beyond a category label by connecting classification with an action recommendation and a digital record that can support responsible waste handling.
+IMAGE
+→
+PREDICT
+→
+GUIDE
+→
+RECORD
+03
+--- ppt/slides/slide4.xml ---
+Objectives
+Designed around recognition, understanding and responsible action
+01  Intelligent Waste Recognition
+Develop an image classification model that identifies selected household waste categories from images.
+02  Context-Aware Understanding
+Use the predicted category to explain the waste type and highlight relevant handling considerations.
+03  Smart Action Recommendation
+Suggest a suitable next step such as reuse, repair, recycling, collection or special handling.
+04  Digital Waste Passport
+Create a simple digital record containing the predicted category, recommendation and user-confirmed result.
+--- ppt/slides/slide5.xml ---
+Methodology
+AI/ML pipeline: from image input to meaningful guidance
+1. Image Input
+2. Preprocessing
+3. Model Training /
+Prediction
+4. User
+Confirmation
+5. Guidance +
+Digital Record
+→
+→
+→
+→
+Learn
+Prepare labelled waste images and train the classification model.
+Predict
+Use the trained model to estimate the category of a new image.
+Assist
+Translate the prediction into an understandable action recommendation.
+06
+--- ppt/slides/slide6.xml ---
+Implementation
+Core implementation is centred on Artificial Intelligence and Machine Learning
+Dataset Preparation
+Collect, label and organise images of selected household waste categories for training and testing.
+Model Development
+Preprocess images, train an image classification model and evaluate predictions using unseen samples.
+Intelligent Guidance
+Connect predicted categories with action rules and information for the user.
+Proposed AI/ML Architecture
+Input
+Images
+Preprocessing
+Trained
+Classifier
+Prediction
+Recommendation
+Engine
+→
+→
+→
+→
+The implementation will be developed progressively: dataset → model → prediction → intelligent output.
+07
+--- ppt/slides/slide7.xml ---
+Roadmap for Implementation
+A staged plan for developing and validating the AI/ML prototype
+01
+Literature Review
+Study relevant AI/ML waste classification research and finalise the project scope.
+02
+Dataset & Labelling
+Collect, organise and label images for the selected waste categories.
+03
+Model Development
+Preprocess data, train the model and evaluate its classification performance.
+04
+Intelligent Features
+Add action recommendation and digital waste passport concepts.
+05
+Testing & Review
+Test sample images, analyse errors and prepare the final demonstration.
+08
+--- ppt/slides/slide8.xml ---
+Thank You
+AI that helps people understand waste before they dispose of it.
+Recognise
+Recommend
+Record
+Questions and Suggestions
+09
+--- ppt/slides/slide9.xml ---
+Objective 05
+Evaluate the model and validate the usefulness of the proposed AI/ML workflow
+05  Model Evaluation
+Evaluate the image classification model using test images and observe its prediction accuracy across selected waste categories.
+Validation Through User Feedback
+Review incorrect or uncertain predictions and use the observations to improve the model and the clarity of its recommendations.
+Test
+Use unseen sample images.
+Measure
+Observe classification results.
+Improve
+Identify areas for refinement.
+05
